@@ -9,9 +9,6 @@ Assume that the values are in full baht only and the possible coins/bills are 1,
 # do not change the function name
 # do not change the function input
 
-def ChangeCalculator(price,paid):
-
-    return [0]*8
 def ChangeCalculator(price ,paid ):
     if isinstance(paid, str) or isinstance(price, str) or isinstance(paid, float) or isinstance(price, float):
         return "ERROR"
@@ -38,3 +35,4 @@ def ChangeCalculator(price ,paid ):
         return "ERROR"
     Ans = [PanTorn,HarRoiTorn,RoiTorn,HarSipTorn,YeeSipTorn,SipTorn,HarTorn,NuengTorn]
     return Ans
+print(ChangeCalculator(20,20))
